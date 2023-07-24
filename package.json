@@ -2,6 +2,7 @@
   "name": "learn-nextjs",
   "version": "0.1.0",
   "private": true,
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +11,11 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
+    "bcrypt": "^5.1.0",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.3.4",
     "next": "13.4.8",
+    "next-auth": "^4.22.1",
     "postcss": "8.4.25",
     "react": "18.2.0",
     "react-dom": "18.2.0",
