@@ -17,6 +17,7 @@ const [post, setPost] = useState({
 
 const handleSubmit = async (e)=>{
     e.preventDefault()
+    console.log("crateprompt function")
     setsubmitting(true)
     try {
         const response = await fetch('/api/prompt/new',

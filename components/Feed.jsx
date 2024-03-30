@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import PromptCard from "./PromptCard";
 
 const PromptCardList = ({ data, handleTagClick }) => {
+  console.log(data, "data tat list");
   return (
     <div className="prompt_layout mt-16">
       {data.map((post) => (
@@ -56,10 +57,12 @@ const Feed = () => {
     const fetchPosts = async () => {
       const response = await fetch("api/prompt");
       const data = await response.json();
+      console.log(data, "data");
       setPosts(data);
     };
     fetchPosts();
   }, []);
+  console.log(searchedResults,'searchresult')
 
   return (
 
