@@ -2,7 +2,6 @@
 
 import { connectToDB } from "@utils/database"
 import promptModel from "@models/prompt"
-import { json } from "express"
 
 export const GET = async (req,{params})=>{
     try {
